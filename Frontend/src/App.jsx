@@ -19,7 +19,6 @@ const router=createBrowserRouter(
     <>
     <div className="app">
     <RouterProvider router={router}/>
-    
     </div>
     <Footer/>
     </>
