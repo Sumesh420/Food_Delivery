@@ -21,7 +21,8 @@ function Navbar({setShowLogin}) {
     const searchHandler=(e)=>{
       e.preventDefault();
       if (searchInput.trim() !== "") {
-        navigate(`/search/${searchInput}`);
+        navigate(`/search/${searchInput}`)
+        setSearchInput("")
     } else {
         console.log("Search input is empty! Not navigating.");
     }
