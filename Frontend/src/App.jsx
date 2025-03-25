@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home.jsx"
 import Cart from "./pages/Cart/Cart.jsx"
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder.jsx"
 import Footer from './components/Footer/Footer.jsx'
+import Search from './pages/Search/SearchResult.jsx'
 
 function App() {
 const router=createBrowserRouter(
@@ -12,6 +13,7 @@ const router=createBrowserRouter(
       <Route path="" element={<Home/>}/>
       <Route path="cart" element={<Cart/>}/>
       <Route path="placeorder" element={<PlaceOrder/>}/>
+      <Route path="/search/:searchInput" element={<Search/>}/>
     </Route>
   )
 )
